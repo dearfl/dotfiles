@@ -1,0 +1,7 @@
+# required by www-client/surf-2.1-r1::gentoo
+# required by www-client/surf (argument)
+>=app-crypt/gcr-3.40.0 gtk
+# required by net-libs/webkit-gtk-2.36.3::gentoo
+# required by www-client/surf-2.1-r1::gentoo
+# required by www-client/surf (argument)
+>=media-libs/harfbuzz-4.2.1 icu

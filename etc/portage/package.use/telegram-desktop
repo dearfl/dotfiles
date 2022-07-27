@@ -1,0 +1,6 @@
+# required by net-im/telegram-desktop-3.3.0::gentoo
+# required by telegram-desktop (argument)
+>=dev-qt/qtgui-5.15.2-r16 jpeg
+# required by net-im/telegram-desktop-3.3.0::gentoo
+# required by telegram-desktop (argument)
+>=media-video/ffmpeg-4.4.1-r1 opus

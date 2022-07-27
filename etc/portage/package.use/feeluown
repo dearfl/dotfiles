@@ -1,0 +1,6 @@
+# required by media-sound/feeluown-3.8.1::gentoo-zh
+# required by dev-python/fuo-netease-0.8::gentoo-zh
+>=dev-python/PyQt5-5.15.4-r1 svg
+# required by media-sound/feeluown-3.8.1::gentoo-zh
+# required by dev-python/fuo-netease-0.8::gentoo-zh
+>=media-video/mpv-0.33.1-r2 libmpv

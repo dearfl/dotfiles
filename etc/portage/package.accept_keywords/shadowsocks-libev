@@ -1,0 +1,11 @@
+# required by net-proxy/shadowsocks-libev-3.3.5::gentoo
+# required by shadowsocks-libev (argument)
+>=net-libs/libcork-0.15.0-r2 ~amd64
+# required by net-proxy/shadowsocks-libev-3.3.5::gentoo
+# required by shadowsocks-libev (argument)
+>=net-libs/libcorkipset-1.1.1.20150311_p8 ~amd64
+# required by net-proxy/shadowsocks-libev-3.3.5::gentoo
+# required by shadowsocks-libev (argument)
+>=net-libs/libbloom-1.6 ~amd64
+# required by shadowsocks-libev (argument)
+>=net-proxy/shadowsocks-libev-3.3.5 ~amd64

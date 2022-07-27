@@ -1,0 +1,5 @@
+# required by zellij (argument)
+=app-misc/zellij-0.29.1 ~amd64
+# required by app-misc/zellij-0.29.1::guru
+# required by zellij (argument)
+=app-text/mandown-0.1.2 ~amd64

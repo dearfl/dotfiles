@@ -1,0 +1,6 @@
+# required by media-gfx/graphviz-2.50.0::gentoo
+# required by media-gfx/imagemagick-7.1.0.13::gentoo[graphviz]
+# required by imagemagick (argument)
+>=media-libs/gd-2.3.3-r1 truetype fontconfig
+
+media-gfx/imagemagick fontconfig webp lzma svg fftw jpeg2k graphviz tiff jpeg xml

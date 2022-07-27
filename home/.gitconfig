@@ -1,0 +1,7 @@
+[user]
+	email = i@flr.me
+	name = dearfl
+[init]
+	defaultBranch = main
+[http "github.com"]
+	proxy = socks5://localhost:1080

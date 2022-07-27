@@ -1,0 +1,11 @@
+# required by net-proxy/Xray-1.5.5-r2::gentoo-zh
+# required by @selected
+# required by @world (argument)
+>=dev-libs/v2ray-geoip-bin-202206090051 ~amd64
+# required by net-proxy/Xray-1.5.5-r2::gentoo-zh
+# required by @selected
+# required by @world (argument)
+>=dev-libs/v2ray-domain-list-community-bin-20220612032845 ~amd64
+# required by @selected
+# required by @world (argument)
+>=net-proxy/Xray-1.5.5-r2 ~amd64
