@@ -1,0 +1,22 @@
+#! /bin/sh
+
+# Refresh Wallpaper
+# while feh --randomize --bg-fill /home/flr/res/images/fav
+# do
+#     sleep 600
+# done &
+
+while feh --randomize --bg-fill /home/flr/res/images/fav
+do
+    sleep 600
+done &
+
+# Autostart
+# /usr/lib64/libexec/polkit-kde-authentication-agent-1 &
+picom -CGb --daemon
+fcitx5 -d
+slstatus &
+# flameshot &
+# pasystray &
+# copyq &
+# (conky | while read LINE; do xsetroot -name "$LINE"; done) &

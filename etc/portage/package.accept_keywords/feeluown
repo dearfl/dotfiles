@@ -1,26 +1,26 @@
 # required by media-sound/feeluown-3.8.1::gentoo-zh
 # required by dev-python/fuo-netease-0.8::gentoo-zh
->=dev-python/qasync-0.22.0 ~amd64
+=dev-python/qasync-0.22.0 ~amd64
 # required by media-sound/feeluown-3.8.1::gentoo-zh[local]
 # required by dev-python/fuo-netease-0.8::gentoo-zh
->=dev-python/fuo-local-0.3 ~amd64
+=dev-python/fuo-local-0.3 ~amd64
 # required by feeluown (argument)
->=media-sound/feeluown-3.8.1 ~amd64
+=media-sound/feeluown-3.8.1 ~amd64
 # required by media-sound/feeluown-3.8.1::gentoo-zh[qqmusic]
 # required by dev-python/fuo-netease-0.8::gentoo-zh
->=dev-python/fuo-qqmusic-0.3.3 ~amd64
+=dev-python/fuo-qqmusic-0.3.3 ~amd64
 # required by media-sound/feeluown-3.8.1::gentoo-zh[netease]
 # required by dev-python/fuo-local-0.3::gentoo-zh
->=dev-python/fuo-netease-0.8 ~amd64
+=dev-python/fuo-netease-0.8 ~amd64
 # required by dev-python/fuo-kuwo-0.1.5::gentoo-zh
 # required by media-sound/feeluown-3.8.1::gentoo-zh[kuwo]
 # required by dev-python/fuo-netease-0.8::gentoo-zh
->=dev-python/marshmallow-3.14.0 ~amd64
+=dev-python/marshmallow-3.14.0 ~amd64
 # required by media-sound/feeluown-3.8.1::gentoo-zh
 # required by dev-python/fuo-netease-0.8::gentoo-zh
->=dev-python/janus-1.0.0-r1 ~amd64
+=dev-python/janus-1.0.0-r1 ~amd64
 # required by media-sound/feeluown-3.8.1::gentoo-zh[kuwo]
 # required by dev-python/fuo-netease-0.8::gentoo-zh
->=dev-python/fuo-kuwo-0.1.5 ~amd64
+=dev-python/fuo-kuwo-0.1.5 ~amd64
 # required by dev-python/fuo-kuwo-0.1.5::gentoo-zh
->=media-sound/feeluown-3.8.3 ~amd64
+=media-sound/feeluown-3.8.3 ~amd64

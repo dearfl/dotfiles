@@ -1,29 +1,29 @@
 # required by app-i18n/fcitx-chinese-addons-5.0.13::gentoo-zh[gui]
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[chinese-addons,-lua]
 # required by fcitx-meta (argument)
->=app-i18n/fcitx-qt-5.0.12 ~amd64
+=app-i18n/fcitx-qt-5.0.12 ~amd64
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[configtool]
 # required by fcitx-meta (argument)
->=app-i18n/fcitx-configtool-5.0.13 ~amd64
+=app-i18n/fcitx-configtool-5.0.13 ~amd64
 # required by app-i18n/fcitx-5.0.16::gentoo-zh[X]
 # required by app-i18n/fcitx-configtool-5.0.13::gentoo-zh
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[configtool]
 # required by fcitx-meta (argument)
->=x11-libs/xcb-imdkit-1.0.3 ~amd64
+=x11-libs/xcb-imdkit-1.0.3 ~amd64
 # required by fcitx-meta (argument)
->=app-i18n/fcitx-meta-5.0.12-r1 ~amd64
+=app-i18n/fcitx-meta-5.0.12-r1 ~amd64
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[chinese-addons,-lua]
 # required by fcitx-meta (argument)
->=app-i18n/fcitx-chinese-addons-5.0.13 ~amd64
+=app-i18n/fcitx-chinese-addons-5.0.13 ~amd64
 # required by app-i18n/fcitx-chinese-addons-5.0.13::gentoo-zh
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[chinese-addons,-lua]
 # required by fcitx-meta (argument)
->=app-i18n/libime-1.0.12 ~amd64
+=app-i18n/libime-1.0.12 ~amd64
 # required by app-i18n/libime-1.0.12::gentoo-zh
 # required by app-i18n/fcitx-chinese-addons-5.0.13::gentoo-zh
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[chinese-addons,-lua]
 # required by fcitx-meta (argument)
->=app-i18n/fcitx-5.0.16 ~amd64
+=app-i18n/fcitx-5.0.16 ~amd64
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[gtk3]
 # required by fcitx-meta (argument)
->=app-i18n/fcitx-gtk-5.0.14 ~amd64
+=app-i18n/fcitx-gtk-5.0.14 ~amd64

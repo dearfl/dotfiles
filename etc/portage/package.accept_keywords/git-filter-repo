@@ -1,2 +1,2 @@
 # required by git-filter-repo (argument)
->=dev-vcs/git-filter-repo-2.34.0 ~amd64
+=dev-vcs/git-filter-repo-2.34.0 ~amd64

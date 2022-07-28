@@ -1,0 +1,3 @@
+# required by helix (argument)
+# /etc/portage/package.mask/guru:
+app-editors/helix
