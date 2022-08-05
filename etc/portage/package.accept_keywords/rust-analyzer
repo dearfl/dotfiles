@@ -1,0 +1,2 @@
+# required by rust-analyzer::guru (argument)
+=dev-util/rust-analyzer-20220613 ~amd64
