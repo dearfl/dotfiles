@@ -2,4 +2,4 @@
 # the chromium launcher.
 
 # Options to pass to chromium.
-CHROMIUM_FLAGS="--enable-features=VaapiVideoDecoder"
+CHROMIUM_FLAGS="--enable-features=VaapiVideoDecoder --disable-features=UseChromeOSDirectVideoDecoder"
