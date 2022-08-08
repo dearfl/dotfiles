@@ -1,0 +1,2 @@
+# required by libva-intel-media-driver (argument)
+x11-libs/libva-intel-media-driver no-source-code

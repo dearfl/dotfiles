@@ -1,0 +1,2 @@
+# required by igt-gpu-tools (argument)
+=x11-apps/igt-gpu-tools-1.26-r2 ~amd64

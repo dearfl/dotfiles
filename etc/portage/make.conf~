@@ -2,7 +2,7 @@
 # built this stage.
 # Please consult /usr/share/portage/config/make.conf.example for a more
 # detailed example.
-COMMON_FLAGS="-march=native -O2 -pipe"
+COMMON_FLAGS="-march=skylake -O2 -pipe"
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
@@ -13,7 +13,7 @@ PORTDIR="/var/db/repos/gentoo"
 DISTDIR="/var/cache/distfiles"
 PKGDIR="/var/cache/binpkgs"
 
-MAKEOPTS="-j8"
+MAKEOPTS="-j6"
 
 EMERGE_DEFAULT_OPTS="--autounmask"
 
@@ -26,7 +26,8 @@ GENTOO_MIRRORS="https://mirrors.aliyun.com/gentoo/ https://mirrors.163.com/gento
 CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sse sse2 sse3 sse4_1 sse4_2 ssse3"
 
 USE="X pulseaudio networkmanager bluetooth xinerama synaptics udev opengl \
-     -dvd -cdda -cups dbus savedconfig alsa vaapi"
+     -dvd -cdda -cups dbus savedconfig alsa vaapi policykit alsa-plugin nvme\
+     thunderbolt tpm uefi"
 
 VIDEO_CARDS="intel i965 iris"
 
