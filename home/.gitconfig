@@ -5,3 +5,15 @@
 	defaultBranch = main
 [http "github.com"]
 	proxy = socks5://localhost:1080
+[diff]
+    tool = nvimdiff
+[diff]
+    prompt = false
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[difftool "difft"]
+    cmd = "difft \"$LOCAL\" \"$REMOTE\""
+[pager]
+    difftool = false
+[alias]
+    dft = difftool
