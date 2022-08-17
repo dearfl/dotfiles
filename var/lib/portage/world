@@ -7,6 +7,7 @@ app-arch/rar
 app-benchmarks/hyperfine
 app-editors/neovim
 app-editors/vim
+app-emulation/qemu
 app-eselect/eselect-repository
 app-i18n/fcitx-meta
 app-misc/fdupes
@@ -68,11 +69,12 @@ media-fonts/hack
 media-fonts/nerd-fonts
 media-fonts/noto
 media-fonts/noto-emoji
-media-fonts/sarasa-gothic
 media-fonts/source-han-sans
 media-fonts/wqy-microhei
 media-gfx/feh
+media-gfx/freecad
 media-gfx/imagemagick
+media-gfx/librecad
 media-gfx/scrot
 media-gfx/sxiv
 media-libs/opencv
@@ -96,6 +98,7 @@ net-misc/youtube-dl
 net-proxy/Xray
 net-proxy/shadowsocks-rust
 net-wireless/blueman
+sci-electronics/kicad-meta
 sci-visualization/gnuplot
 sys-apps/bat
 sys-apps/cpuid
@@ -117,6 +120,7 @@ sys-auth/fprintd
 sys-boot/grub:2
 sys-boot/woeusb
 sys-devel/clang
+sys-devel/gdb
 sys-firmware/alsa-firmware
 sys-firmware/sof-firmware
 sys-fs/btrfs-progs

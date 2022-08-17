@@ -1,0 +1,25 @@
+# required by kicad-meta (argument)
+=sci-electronics/kicad-meta-6.0.6 ~amd64
+# required by sci-electronics/kicad-meta-6.0.6::gentoo
+# required by kicad-meta (argument)
+=sci-electronics/kicad-6.0.6 ~amd64
+# required by sci-electronics/kicad-meta-6.0.6::gentoo
+# required by kicad-meta (argument)
+=sci-electronics/kicad-footprints-6.0.6 ~amd64
+# required by sci-electronics/kicad-meta-6.0.6::gentoo
+# required by kicad-meta (argument)
+=sci-electronics/kicad-symbols-6.0.6 ~amd64
+# required by sci-electronics/kicad-meta-6.0.6::gentoo[doc]
+# required by kicad-meta (argument)
+=app-doc/kicad-doc-6.0.6 ~amd64
+# required by sci-electronics/kicad-6.0.6::gentoo[ngspice]
+# required by sci-electronics/kicad-symbols-6.0.6::gentoo
+# required by sci-electronics/kicad-meta-6.0.6::gentoo
+# required by kicad-meta (argument)
+=sci-electronics/ngspice-36 ~amd64
+# required by sci-electronics/kicad-meta-6.0.6::gentoo[-minimal]
+# required by kicad-meta (argument)
+=sci-electronics/kicad-templates-6.0.6 ~amd64
+# required by sci-electronics/kicad-meta-6.0.6::gentoo[-minimal]
+# required by kicad-meta (argument)
+=sci-electronics/kicad-packages3d-6.0.6 ~amd64
