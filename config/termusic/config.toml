@@ -1,6 +1,6 @@
-music_dir = ["/home/flr/res/audio/music/"]
-loop_mode = "Playlist"
-volume = 30
+music_dir = ["~/res/audio/music"]
+loop_mode = "Single"
+volume = 10
 speed = 10
 add_playlist_front = false
 gapless = true
@@ -379,11 +379,11 @@ args = "c"
 [keys.global_config_open.modifier]
 type = "KeyModifiers"
 bits = 2
-[keys.global_config_save.code]
+[keys.config_save.code]
 type = "Char"
 args = "s"
 
-[keys.global_config_save.modifier]
+[keys.config_save.modifier]
 type = "KeyModifiers"
 bits = 2
 [keys.library_switch_root.code]
