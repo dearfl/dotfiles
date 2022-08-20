@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  fonts.default_family:
-    global: WenQuanYi Micro Hei
+  content.proxy:
+    global: socks5://localhost:1080

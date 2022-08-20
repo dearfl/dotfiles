@@ -280,7 +280,7 @@ c.fonts.default_size = "16pt"
 
 c.downloads.location.directory = '/home/flr/res/downloads/'
 
-c.content.proxy = 'socks://localhost:1080'
+c.content.proxy = 'socks5://localhost:1080'
 c.content.autoplay = False
 
 c.content.blocking.method = 'both'
