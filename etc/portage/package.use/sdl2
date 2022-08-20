@@ -1,0 +1,6 @@
+media-libs/libsdl2 kms static-libs doc
+media-libs/sdl2-gfx doc
+media-libs/sdl2-net static-libs
+media-libs/sdl2-ttf static-libs
+media-libs/sdl2-mixer mp3 flac
+media-libs/sdl2-image jpeg png tiff gif static-libs webp

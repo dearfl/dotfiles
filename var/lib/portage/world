@@ -78,6 +78,11 @@ media-gfx/librecad
 media-gfx/scrot
 media-gfx/sxiv
 media-libs/opencv
+media-libs/sdl2-gfx
+media-libs/sdl2-image
+media-libs/sdl2-mixer
+media-libs/sdl2-net
+media-libs/sdl2-ttf
 media-sound/cava
 media-sound/mp3cat
 media-sound/mp3info
@@ -97,6 +102,7 @@ net-misc/you-get
 net-misc/youtube-dl
 net-proxy/Xray
 net-proxy/shadowsocks-rust
+net-proxy/v2ray
 net-wireless/blueman
 sci-electronics/kicad-meta
 sci-visualization/gnuplot

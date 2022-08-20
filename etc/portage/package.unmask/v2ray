@@ -1,0 +1,3 @@
+# required by v2ray (argument)
+# /etc/portage/package.mask/gentoo-zh:
+net-proxy/v2ray
