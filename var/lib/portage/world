@@ -44,6 +44,7 @@ dev-python/pip
 dev-util/FlameGraph
 dev-util/android-tools
 dev-util/cargo-ebuild
+dev-util/ccls
 dev-util/cppcheck
 dev-util/cscope
 dev-util/ctags
@@ -55,6 +56,7 @@ dev-util/pkgdev
 dev-util/rust-analyzer::guru
 dev-util/shellcheck
 dev-util/strace
+dev-util/tree-sitter-cli
 dev-util/valgrind
 dev-vcs/git
 dev-vcs/git-extras
