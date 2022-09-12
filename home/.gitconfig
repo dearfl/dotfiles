@@ -1,3 +1,9 @@
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[add.interactive]
+    useBuiltin = false
 [user]
 	email = i@flr.me
 	name = dearfl
@@ -7,8 +13,8 @@
 	proxy = socks5://localhost:1080
 [diff]
     tool = nvimdiff
-[diff]
     prompt = false
+    colorMoved = default
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [difftool "difft"]
@@ -17,3 +23,9 @@
     difftool = false
 [alias]
     dft = difftool
+[delta]
+    navigate = true
+    light = false
+[merge]
+    conflictstyle = diff3
+
