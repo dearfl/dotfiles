@@ -5,6 +5,7 @@ app-admin/sysstat
 app-arch/p7zip
 app-arch/rar
 app-benchmarks/hyperfine
+app-editors/helix
 app-editors/neovim
 app-editors/vim
 app-emulation/qemu
@@ -41,6 +42,7 @@ app-text/tree
 app-text/wgetpaste
 dev-lua/luacheck
 dev-python/autopep8
+dev-python/coverage
 dev-python/flake8
 dev-python/pip
 dev-util/FlameGraph
@@ -106,6 +108,7 @@ net-misc/networkmanager
 net-misc/proxychains
 net-misc/you-get
 net-misc/youtube-dl
+net-p2p/transmission
 net-proxy/Xray
 net-proxy/shadowsocks-rust
 net-proxy/v2ray
