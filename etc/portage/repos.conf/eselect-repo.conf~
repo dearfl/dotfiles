@@ -11,5 +11,11 @@ location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
 
+
 [local]
-location = local
+location = /var/db/repos/local
+
+[benzene-overlay]
+location = /var/db/repos/benzene-overlay
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/benzene-overlay.git

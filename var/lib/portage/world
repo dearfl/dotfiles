@@ -33,6 +33,8 @@ app-portage/repoman
 app-portage/smart-live-rebuild
 app-shells/fish
 app-shells/fzf
+app-shells/fzf-fish
+app-shells/zoxide
 app-text/mupdf
 app-text/texlive
 app-text/tree
@@ -49,6 +51,7 @@ dev-util/cppcheck
 dev-util/cscope
 dev-util/ctags
 dev-util/difftastic
+dev-util/git-delta
 dev-util/github-cli
 dev-util/howdoi
 dev-util/perf
@@ -98,6 +101,7 @@ net-analyzer/traceroute
 net-im/telegram-desktop
 net-irc/irssi
 net-misc/aria2
+net-misc/httpie
 net-misc/networkmanager
 net-misc/proxychains
 net-misc/you-get
@@ -137,6 +141,7 @@ sys-fs/ncdu
 sys-kernel/gentoo-kernel-bin
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
+sys-process/bottom
 sys-process/btop
 sys-process/htop
 sys-process/lsof
