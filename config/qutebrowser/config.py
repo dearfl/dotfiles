@@ -234,6 +234,7 @@ c.url.searchengines = {
     'c': 'https://en.cppreference.com/w/cpp/keyword/{}',
     'r': 'https://doc.rust-lang.org/stable/std/?search={}',
     'gt': 'https://wiki.gentoo.org/wiki/{}',
+    'gh': 'https://github.com/search?q={}',
 }
 
 #c.url.start_pages = ['https://nixos.org/nixos/manual/options.html']
