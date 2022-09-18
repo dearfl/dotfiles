@@ -1,2 +1,10 @@
 app-text/texlive context xetex science cjk games extra png publishers l10n_zh truetype humanities graphics music pstricks l10n_en
 app-text/texlive-core xetex cjk
+
+# required by app-text/texlive-core-2021-r1::gentoo
+# required by virtual/tex-base-0::gentoo
+# required by app-text/dvisvgm-2.12::gentoo
+# required by app-text/texlive-2021::gentoo[extra]
+# required by @selected
+# required by @world (argument)
+>=media-libs/harfbuzz-5.1.0 icu

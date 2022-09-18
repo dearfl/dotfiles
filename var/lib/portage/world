@@ -30,7 +30,6 @@ app-portage/pacvis
 app-portage/pfl
 app-portage/portage-lostfiles
 app-portage/portage-utils
-app-portage/repoman
 app-portage/smart-live-rebuild
 app-shells/fish
 app-shells/fzf
