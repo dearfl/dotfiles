@@ -1,0 +1,4 @@
+app-editors/emacs cairo gif gtk gui harfbuzz imagemagick jpeg json png sound tiff xft
+# required by app-editors/emacs-28.1-r2::gentoo
+# required by emacs (argument)
+app-emacs/emacs-common gui

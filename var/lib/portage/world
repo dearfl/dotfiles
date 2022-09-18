@@ -5,6 +5,7 @@ app-admin/sysstat
 app-arch/p7zip
 app-arch/rar
 app-benchmarks/hyperfine
+app-editors/emacs
 app-editors/helix
 app-editors/neovim
 app-editors/vim
