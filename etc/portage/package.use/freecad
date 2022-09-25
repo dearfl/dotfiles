@@ -11,3 +11,8 @@
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qtquickcontrols2-5.15.5-r1 widgets
+
+# required by media-gfx/freecad-0.20-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=sci-libs/med-4.1.1 python

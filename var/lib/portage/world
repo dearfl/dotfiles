@@ -40,6 +40,7 @@ app-text/mupdf
 app-text/texlive
 app-text/tree
 app-text/wgetpaste
+dev-libs/wayland
 dev-lua/luacheck
 dev-python/autopep8
 dev-python/coverage
@@ -141,6 +142,8 @@ sys-firmware/alsa-firmware
 sys-firmware/sof-firmware
 sys-fs/btrfs-progs
 sys-fs/dosfstools
+sys-fs/fuse
+sys-fs/fuse:0
 sys-fs/ncdu
 sys-kernel/gentoo-kernel-bin
 sys-kernel/gentoo-sources
