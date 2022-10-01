@@ -14,6 +14,7 @@ app-eselect/eselect-repository
 app-i18n/fcitx-meta
 app-misc/fdupes
 app-misc/jq
+app-misc/klavaro
 app-misc/neofetch
 app-misc/pfetch
 app-misc/ranger
