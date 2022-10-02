@@ -1,6 +1,7 @@
-diff -pu dwm.git/config.def.h dwm.underlinetags/config.def.h
---- dwm.git/config.def.h	2021-02-27 20:04:32.030570909 -0600
-+++ dwm.underlinetags/config.def.h	2021-03-16 16:42:26.278703624 -0500
+diff --git a/config.def.h b/config.def.h
+index a2ac963..c7875bb 100644
+--- a/config.def.h
++++ b/config.def.h
 @@ -21,6 +21,11 @@ static const char *colors[][3]      = {
  /* tagging */
  static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -13,10 +14,11 @@ diff -pu dwm.git/config.def.h dwm.underlinetags/config.def.h
  static const Rule rules[] = {
  	/* xprop(1):
  	 *	WM_CLASS(STRING) = instance, class
-diff -pu dwm.git/dwm.c dwm.underlinetags/dwm.c
---- dwm.git/dwm.c	2021-02-27 20:04:32.030570909 -0600
-+++ dwm.underlinetags/dwm.c	2021-03-16 16:41:21.468077151 -0500
-@@ -719,6 +719,8 @@ drawbar(Monitor *m)
+diff --git a/dwm.c b/dwm.c
+index a96f33c..046555e 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -722,6 +722,8 @@ drawbar(Monitor *m)
  		w = TEXTW(tags[i]);
  		drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeSel : SchemeNorm]);
  		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
