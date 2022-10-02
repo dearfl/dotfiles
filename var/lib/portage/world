@@ -102,6 +102,8 @@ media-sound/termusic
 media-video/ffmpeg
 media-video/libva-utils
 media-video/mpv
+media-video/obs-studio
+media-video/simplescreenrecorder
 net-analyzer/traceroute
 net-im/telegram-desktop
 net-irc/irssi
@@ -159,7 +161,10 @@ www-client/pybugz
 www-client/qutebrowser
 x11-apps/igt-gpu-tools
 x11-apps/mesa-progs
-x11-base/xorg-x11
+x11-apps/setxkbmap
+x11-apps/xbacklight
+x11-apps/xrandr
+x11-apps/xsetroot
 x11-libs/libva-intel-media-driver
 x11-misc/clipmenu
 x11-misc/dmenu

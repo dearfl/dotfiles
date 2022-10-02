@@ -1,0 +1,4 @@
+media-video/obs-studio v4l truetype
+# required by media-video/obs-studio-27.2.4::gentoo
+# required by obs-studio (argument)
+>=media-video/ffmpeg-4.4.2 x264
