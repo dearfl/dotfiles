@@ -12,6 +12,7 @@ app-editors/vim
 app-emulation/qemu
 app-eselect/eselect-repository
 app-i18n/fcitx-meta
+app-misc/cmatrix
 app-misc/fdupes
 app-misc/jq
 app-misc/klavaro
