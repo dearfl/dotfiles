@@ -10,7 +10,7 @@
 [init]
 	defaultBranch = main
 [http "github.com"]
-	proxy = socks5://localhost:1080
+	proxy = socks5://localhost:1081
 [diff]
     tool = nvimdiff
     prompt = false
