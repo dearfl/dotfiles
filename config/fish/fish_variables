@@ -16,6 +16,7 @@ SETUVAR _fish_abbr_gch:git\x20checkout
 SETUVAR _fish_abbr_gcl:git\x20clone
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gm:git\x20commit\x20\x2dm
+SETUVAR _fish_abbr_gms:git\x20commit\x20\x2dS0F2ACB0B
 SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gps:git\x20push
 SETUVAR _fish_abbr_gs:git\x20status
