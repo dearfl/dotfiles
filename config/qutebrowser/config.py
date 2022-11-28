@@ -281,7 +281,7 @@ c.fonts.default_size = "16pt"
 
 c.downloads.location.directory = '/home/flr/res/downloads/'
 
-c.content.proxy = 'socks5://localhost:1080'
+c.content.proxy = 'socks5://localhost:1082'
 c.content.autoplay = False
 
 c.content.blocking.method = 'both'
@@ -306,7 +306,7 @@ c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack
 # config.bind('zx', 'open -t https://github.com/dearfl')
 # config.bind('zc', 'open -t https://daily.zhihu.com')
 
-config.bind('<Ctrl-l>', 'config-cycle content.proxy socks5://localhost:1080 none', mode='normal')
+config.bind('<Ctrl-l>', 'config-cycle content.proxy socks5://localhost:1082 none', mode='normal')
 config.bind('zp', 'hint links spawn proxychains -q mpv {hint-url}')
 config.bind('zm', 'hint links spawn mpv {hint-url}')
 config.bind('zd', 'hint links spawn yt-dlp -P ~/res/downloads/videos --proxy socks5://localhost:1080 {hint-url}')
