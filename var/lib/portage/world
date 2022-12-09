@@ -49,6 +49,7 @@ dev-python/autopep8
 dev-python/flake8
 dev-python/mypy
 dev-python/pip
+dev-python/pylint
 dev-util/FlameGraph
 dev-util/android-tools
 dev-util/cargo-ebuild
@@ -107,6 +108,7 @@ media-video/libva-utils
 media-video/mpv
 media-video/obs-studio
 media-video/simplescreenrecorder
+net-analyzer/netcat
 net-analyzer/traceroute
 net-im/telegram-desktop
 net-im/wemeet
@@ -118,8 +120,8 @@ net-misc/proxychains
 net-misc/you-get
 net-misc/youtube-dl
 net-p2p/transmission
-net-proxy/Xray
 net-proxy/shadowsocks-rust
+net-proxy/tsocks
 net-proxy/v2ray
 net-wireless/blueman
 sci-electronics/kicad-meta
@@ -135,6 +137,7 @@ sys-apps/hwinfo
 sys-apps/inxi
 sys-apps/lm-sensors
 sys-apps/lshw
+sys-apps/merge-usr
 sys-apps/mlocate
 sys-apps/nvme-cli
 sys-apps/ripgrep

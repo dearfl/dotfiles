@@ -22,7 +22,7 @@
 # required by fcitx-meta (argument)
 =app-i18n/fcitx-gtk-5.0.17-r1 ~amd64
 # required by fcitx-meta (argument)
-=app-i18n/fcitx-meta-5.0.12-r1 ~amd64
+=app-i18n/fcitx-meta-5.0.12-r2 ~amd64
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[configtool]
 # required by fcitx-meta (argument)
 =app-i18n/fcitx-configtool-5.0.14 ~amd64
