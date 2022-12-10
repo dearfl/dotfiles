@@ -11,8 +11,18 @@
 # required by @selected
 # required by @world (argument)
 >=dev-qt/qtquickcontrols2-5.15.5-r1 widgets
-
 # required by media-gfx/freecad-0.20-r1::gentoo
 # required by @selected
 # required by @world (argument)
 >=sci-libs/med-4.1.1 python
+
+>=sci-libs/vtk-9.0.3 qt5 python
+
+# required by sci-libs/vtk-9.1.0-r4::gentoo
+# required by media-gfx/freecad-0.20.1::gentoo[fem]
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=sci-libs/cgnslib-4.3.0 hdf5
+# required by sci-libs/vtk-9.1.0-r4::gentoo[gdal,python]
+# required by media-gfx/freecad-0.20.1::gentoo[fem]
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=sci-libs/gdal-3.5.3 python

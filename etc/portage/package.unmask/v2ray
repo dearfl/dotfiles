@@ -1,3 +1,5 @@
 # required by v2ray (argument)
 # /etc/portage/package.mask/gentoo-zh:
+dev-libs/v2ray-geoip-bin
+dev-libs/v2ray-domain-list-community-bin
 net-proxy/v2ray
