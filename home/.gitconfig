@@ -21,11 +21,15 @@
     difftool = false
 [alias]
     dft = difftool
+	count-lines = "! git log --author=\"$1\" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf \"added lines: %s, removed lines: %s, total lines: %s\\n\", add, subs, loc }' #"
 [delta]
     navigate = true
     light = false
 [merge]
     conflictstyle = diff3
-
 [url "git@github.com:"]
 	insteadOf = https://github.com
+;[http "github.com"]
+;    proxy = socks5://localhost:1082
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig

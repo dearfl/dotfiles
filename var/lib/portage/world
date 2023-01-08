@@ -26,7 +26,6 @@ app-misc/tmux
 app-misc/zellij
 app-portage/cpuid2cpuflags
 app-portage/eix
-app-portage/flaggie
 app-portage/genlop
 app-portage/gentoolkit
 app-portage/pacvis
@@ -50,6 +49,7 @@ dev-python/flake8
 dev-python/mypy
 dev-python/pip
 dev-python/pylint
+dev-python/scipy
 dev-util/FlameGraph
 dev-util/android-tools
 dev-util/cargo-ebuild
@@ -102,6 +102,7 @@ media-sound/mp3cat
 media-sound/mp3info
 media-sound/mpc
 media-sound/mpd
+media-sound/ncpamixer
 media-sound/termusic
 media-video/ffmpeg
 media-video/libva-utils

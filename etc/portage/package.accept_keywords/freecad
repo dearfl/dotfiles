@@ -3,6 +3,6 @@
 # required by @__auto_slot_operator_replace_installed__ (argument)
 =sci-libs/cgnslib-4.3.0 ~amd64
 # required by @__auto_slot_operator_replace_installed__ (argument)
-=sci-libs/vtk-9.1.0-r4 ~amd64
+=sci-libs/vtk-9.1.0-r6 ~amd64
 
 =media-gfx/freecad-0.20-r1 ~amd64

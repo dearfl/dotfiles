@@ -26,3 +26,12 @@
 # required by media-gfx/freecad-0.20.1::gentoo[fem]
 # required by @__auto_slot_operator_replace_installed__ (argument)
 >=sci-libs/gdal-3.5.3 python
+# required by dev-python/matplotlib-3.6.2::gentoo[-test]
+# required by media-gfx/freecad-0.20.1::gentoo[python_single_target_python3_10]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pillow-9.3.0 webp
+# required by media-gfx/freecad-0.20.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/xerces-c-3.2.3 icu

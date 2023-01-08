@@ -1,0 +1,3 @@
+# required by ncpamixer (argument)
+# /etc/portage/package.mask/guru:
+media-sound/ncpamixer

@@ -3,4 +3,6 @@
 	directory = /var/db/repos/guru
 	directory = /var/db/repos/gentoo-zh
 [url "git@github.com:"]
-  insteadOf = https://github.com
+	insteadOf = https://github.com
+;[http "github.com"]
+;	proxy = socks5://localhost:1082

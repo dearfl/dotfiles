@@ -1,2 +1,6 @@
 # required by wemeet (argument)
-=net-im/wemeet-3.9.0.1 ~amd64
+=net-im/wemeet-3.12.0.400-r1 ~amd64
+# required by net-im/wemeet-3.12.0.400-r1::gentoo-zh
+# required by @selected
+# required by @world (argument)
+=dev-qt/qtwebview-5.15.7 ~amd64
