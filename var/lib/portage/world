@@ -45,6 +45,8 @@ dev-cpp/gtest
 dev-libs/wayland
 dev-lua/luacheck
 dev-python/autopep8
+dev-python/black
+dev-python/coverage
 dev-python/flake8
 dev-python/mypy
 dev-python/pip
@@ -119,7 +121,6 @@ net-misc/httpie
 net-misc/networkmanager
 net-misc/proxychains
 net-misc/you-get
-net-misc/youtube-dl
 net-p2p/transmission
 net-proxy/shadowsocks-rust
 net-proxy/tsocks
