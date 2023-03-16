@@ -2,7 +2,7 @@
 # kbid=$(xinput list | sed -n 's/.*Translated.*id=\([0-9]*\).*key.*/\1/p')
 # [ "$kbid" ] && setxkbmap -device "$kbid" -model pc105 -layout us -variant norman -option ctrl:swapcaps
 
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
