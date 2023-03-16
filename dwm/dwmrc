@@ -11,6 +11,13 @@ do
     sleep 600
 done &
 
+# keyboard layout
+# KBID=$(xinput list | rg 'AT Translated Set 2 keyboard' | sed 's/^.*\tid=\(.*\)\t.*/\1/')
+# {
+#     echo "setxkbmap -device \"$KBID\" -model pc105 -layout us -variant norman -option ctrl:swapcaps"
+#     setxkbmap -device "$KBID" -model pc105 -layout us -variant norman -option ctrl:swapcaps
+# } > ~/.dwm/log
+
 # Autostart
 # /usr/lib64/libexec/polkit-kde-authentication-agent-1 &
 picom -CGb --daemon
