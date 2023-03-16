@@ -3,7 +3,6 @@ app-admin/eclean-kernel
 app-admin/mcelog
 app-admin/sysstat
 app-arch/p7zip
-app-arch/rar
 app-benchmarks/hyperfine
 app-editors/emacs
 app-editors/helix
@@ -127,6 +126,7 @@ net-proxy/tsocks
 net-proxy/v2ray
 net-wireless/blueman
 sci-electronics/kicad-meta
+sci-libs/openblas
 sci-visualization/gnuplot
 sys-apps/bat
 sys-apps/cpuid
