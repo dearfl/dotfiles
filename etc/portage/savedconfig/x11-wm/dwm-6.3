@@ -44,6 +44,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,           0,            1,           -1,        0  },
 	{ "firefox",  NULL,       NULL,           1 << 8,       0,           -1,        0  },
 	{ NULL,       NULL,       "scratchpad",   0,            1,           -1,       's' },
+	{ NULL,       NULL,       "Snake",        0,            1,           -1,        0  },
 };
 
 /* layout(s) */
@@ -82,6 +83,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd_fontsize_16[]  = { "alacritty", "-o", "font.size=16", NULL };
 
 /*First arg only serves to match against key in rules*/
 static const char *scratchpadcmd[] = {"s", "alacritty", "-t", "scratchpad", 
@@ -91,11 +93,21 @@ static const char *scratchpadcmd[] = {"s", "alacritty", "-t", "scratchpad",
                                                         "-o", "window.dimensions.lines=30",
                                                         NULL}; 
 
+static const char *scratchpadcmd_fontsize_16[] = {"s", "alacritty", "-t", "scratchpad", 
+                                                        // "-o", "window.position.x=400",
+                                                        // "-o", "window.position.y=160",
+                                                        "-o", "font.size=16",
+                                                        "-o", "window.dimensions.columns=120",
+                                                        "-o", "window.dimensions.lines=30",
+                                                        NULL}; 
+
 static Key keys[] = {
 	/* modifier                     key             function        argument */
 	{ MODKEY,                       XK_d,           spawn,          {.v = dmenucmd } }, // spawn dmenu
 	{ MODKEY,                       XK_Return,      spawn,          {.v = termcmd } }, // spawn terminal emulator
+	{ MODKEY,                       XK_a,           spawn,          {.v = termcmd_fontsize_16 } }, // spawn terminal emulator
 	{ MODKEY,                       XK_backslash,   togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY|ShiftMask,             XK_backslash,   togglescratch,  {.v = scratchpadcmd_fontsize_16 } },
 	{ MODKEY,                       XK_b,           togglebar,      {0} }, //toggle bar
 	{ MODKEY,                       XK_j,           focusstack,     {.i = +1 } }, // focus next client
 	{ MODKEY,                       XK_k,           focusstack,     {.i = -1 } }, // focus previous client
