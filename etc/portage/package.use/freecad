@@ -35,3 +35,12 @@
 # required by @selected
 # required by @world (argument)
 >=dev-libs/xerces-c-3.2.3 icu
+
+# required by media-libs/simage-1.8.1-r3::gentoo[tiff]
+# required by media-libs/coin-4.0.0::gentoo
+# required by media-libs/quarter-1.1.0-r1::gentoo
+# required by dev-python/pivy-0.6.8::gentoo[-test,quarter]
+# required by media-gfx/freecad-0.20.2::gentoo[python_single_target_python3_10]
+# required by @selected
+# required by @world (argument)
+>=media-libs/tiff-4.5.0 zstd lzma

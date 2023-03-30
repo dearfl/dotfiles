@@ -16,6 +16,7 @@ app-misc/fdupes
 app-misc/jq
 app-misc/klavaro
 app-misc/neofetch
+app-misc/netron
 app-misc/pfetch
 app-misc/ranger
 app-misc/rdfind
@@ -48,6 +49,7 @@ dev-python/black
 dev-python/coverage
 dev-python/flake8
 dev-python/mypy
+dev-python/nvchecker
 dev-python/pip
 dev-python/pylint
 dev-python/scipy
@@ -113,7 +115,6 @@ media-video/simplescreenrecorder
 net-analyzer/netcat
 net-analyzer/traceroute
 net-im/telegram-desktop
-net-im/wemeet
 net-irc/irssi
 net-misc/aria2
 net-misc/httpie
