@@ -1,0 +1,3 @@
+# required by nvchecker (argument)
+# /etc/portage/package.mask/gentoo-zh:
+=dev-python/nvchecker-2.10::gentoo-zh

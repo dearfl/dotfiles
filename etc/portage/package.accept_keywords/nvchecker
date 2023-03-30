@@ -1,0 +1,5 @@
+# required by nvchecker (argument)
+=dev-python/nvchecker-2.10 ~amd64
+# required by dev-python/nvchecker-2.10::gentoo-zh
+# required by nvchecker (argument)
+=dev-python/structlog-22.3.0 ~amd64
