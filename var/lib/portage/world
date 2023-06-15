@@ -28,8 +28,6 @@ app-portage/cpuid2cpuflags
 app-portage/eix
 app-portage/genlop
 app-portage/gentoolkit
-app-portage/pacvis
-app-portage/pfl
 app-portage/portage-lostfiles
 app-portage/portage-utils
 app-portage/smart-live-rebuild
@@ -44,14 +42,18 @@ app-text/wgetpaste
 dev-cpp/gtest
 dev-libs/wayland
 dev-lua/luacheck
+dev-python/ConfigArgParse
 dev-python/autopep8
 dev-python/black
 dev-python/coverage
 dev-python/flake8
 dev-python/mypy
-dev-python/nvchecker
+dev-python/numpy
+dev-python/pdm
 dev-python/pip
 dev-python/pylint
+dev-python/pynvim
+dev-python/pyroute2
 dev-python/scipy
 dev-util/FlameGraph
 dev-util/android-tools
@@ -63,7 +65,6 @@ dev-util/ctags
 dev-util/difftastic
 dev-util/git-delta
 dev-util/github-cli
-dev-util/howdoi
 dev-util/perf
 dev-util/pkgdev
 dev-util/rust-analyzer::guru
@@ -76,6 +77,10 @@ dev-vcs/git-extras
 dev-vcs/git-filter-repo
 dev-vcs/git-sizer
 dev-vcs/lazygit
+games-emulation/yuzu
+games-roguelike/dwarf-fortress
+games-roguelike/nethack
+games-util/dwarf-therapist
 media-fonts/fira-code
 media-fonts/fira-mono
 media-fonts/fira-sans
@@ -88,7 +93,6 @@ media-fonts/source-han-sans
 media-fonts/wqy-microhei
 media-gfx/feh
 media-gfx/flameshot
-media-gfx/freecad
 media-gfx/imagemagick
 media-gfx/librecad
 media-gfx/scrot
@@ -115,6 +119,7 @@ media-video/simplescreenrecorder
 net-analyzer/netcat
 net-analyzer/traceroute
 net-im/telegram-desktop
+net-im/wemeet
 net-irc/irssi
 net-misc/aria2
 net-misc/httpie
@@ -150,6 +155,7 @@ sys-auth/fprintd
 sys-boot/grub:2
 sys-boot/woeusb
 sys-devel/clang
+sys-devel/gcc:13
 sys-devel/gdb
 sys-firmware/alsa-firmware
 sys-firmware/sof-firmware
