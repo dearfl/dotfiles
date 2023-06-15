@@ -1,0 +1,2 @@
+# required by =gcc-13.1.0-r1 (argument)
+=sys-devel/gcc-13.1.0-r1 ~amd64

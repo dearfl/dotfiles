@@ -1,3 +1,2 @@
 # required by netron (argument)
-=app-misc/netron-6.7.8 ~amd64
-=app-misc/netron-6.7.9 ~amd64
+>=app-misc/netron-6.8.8 ~amd64

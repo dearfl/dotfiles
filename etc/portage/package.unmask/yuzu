@@ -1,0 +1,7 @@
+# required by games-emulation/yuzu-0_p20230202::guru
+# required by games-emulation/yuzu (argument)
+# /etc/portage/package.mask/guru:
+dev-cpp/cpp-jwt
+# required by games-emulation/yuzu (argument)
+# /etc/portage/package.mask/guru:
+games-emulation/yuzu

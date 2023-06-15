@@ -1,0 +1,5 @@
+# required by games-emulation/yuzu-0_p20230202::guru
+# required by games-emulation/yuzu (argument)
+=dev-cpp/cpp-jwt-1.5_pre20220727 ~amd64
+# required by games-emulation/yuzu (argument)
+=games-emulation/yuzu-0_p20230202 ~amd64

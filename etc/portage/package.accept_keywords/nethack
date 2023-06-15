@@ -1,0 +1,2 @@
+# required by nethack (argument)
+=games-roguelike/nethack-3.6.6-r1 ~amd64

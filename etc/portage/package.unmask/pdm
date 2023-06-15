@@ -1,0 +1,11 @@
+# required by dev-python/pdm-2.5.1::guru[-test]
+# required by dev-python/pdm (argument)
+# /etc/portage/package.mask/guru:
+dev-python/unearth
+# required by dev-python/pdm (argument)
+# /etc/portage/package.mask/guru:
+dev-python/pdm
+# required by dev-python/pdm-2.5.1::guru[-test]
+# required by dev-python/pdm (argument)
+# /etc/portage/package.mask/guru:
+dev-python/findpython
