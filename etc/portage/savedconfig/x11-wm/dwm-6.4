@@ -1,0 +1,176 @@
+/* See LICENSE file for copyright and license details. */
+
+/* appearance */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int gappih    = 8;       /* horiz inner gap between windows */
+static const unsigned int gappiv    = 8;       /* vert inner gap between windows */
+static const unsigned int gappoh    = 12;       /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov    = 12;       /* vert outer gap between windows and screen edge */
+static const int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
+static const int showbar            = 1;        /* 0 means no bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
+static const char *fonts[]          = { "noto:size=20", "Font Awesome 5 Free Regular:size=20" };
+static const char dmenufont[]       = "noto:size=20";
+
+static const char col_gray1[]       = "#282a2e";
+// static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#222222";
+// static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#d0ddd4";
+static const char col_gray4[]       = "#d7dcd9";
+static const char col_cyan[]        = "#000000";
+static const char *colors[][3]      = {
+	/*               fg         bg         border   */
+	[SchemeNorm] = { col_gray3, col_gray1, col_cyan },
+	[SchemeSel]  = { col_gray4, col_gray1, col_gray3 },
+};
+
+/* tagging */
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+// static const char *tags[] = {"\uf015¹", "\ue5fe²", "\uf030³", "\uf268⁴", "\uf269⁵", "\ue62a⁶", "\ue217⁷", "\uf2dc⁸", "\uf30d⁹"};
+
+static const unsigned int ulinepad	    = 8;	/* horizontal padding between the underline and tag */
+static const unsigned int ulinestroke	= 2;	/* thickness / height of the underline */
+static const unsigned int ulinevoffset	= 1;	/* how far above the bottom of the bar the line should appear */
+static const int ulineall 		        = 0;	/* 1 to show underline on all tags, 0 for just the active ones */
+
+static const Rule rules[] = {
+	/* xprop(1):
+	 *	WM_CLASS(STRING) = instance, class
+	 *	WM_NAME(STRING) = title
+	 */
+	/* class      instance    title           tags mask     isfloating   monitor    scratch key */
+	{ "Gimp",     NULL,       NULL,           0,            1,           -1,        0  },
+	{ "firefox",  NULL,       NULL,           1 << 8,       0,           -1,        0  },
+	{ NULL,       NULL,       "scratchpad",   0,            1,           -1,       's' },
+	{ NULL,       NULL,       "Snake",        0,            1,           -1,        0  },
+};
+
+/* layout(s) */
+static const float mfact     = 0.6; /* factor of master area size [0.05..0.95] */
+static const int nmaster     = 1;    /* number of clients in master area */
+static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
+
+static const Layout layouts[] = {
+	/* symbol     arrange function */
+	{ " \uf009 ",      tile },    /* first entry is default */
+	{ " \uf24d ",      NULL },    /* no layout function means floating behavior */
+	{ " \uf0c9 ",      monocle },
+	// { "[]=",      tile },    /* first entry is default */
+	// { "><>",      NULL },    /* no layout function means floating behavior */
+	// { "[M]",      monocle },
+};
+
+/* key definitions */
+/* 四种键位分别为
+ * 显示切换到某个tag
+ * 额外显示/不显示某个tag
+ * 将窗口移动至某个tag
+ * 将窗口复制/取消至某个tag*/
+#define MODKEY Mod4Mask
+#define TAGKEYS(KEY,TAG) \
+	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+
+/* helper for spawning shell commands in the pre dwm-5.0 fashion */
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+
+/* commands */
+static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd_fontsize_16[]  = { "alacritty", "-o", "font.size=16", NULL };
+
+/*First arg only serves to match against key in rules*/
+static const char *scratchpadcmd[] = {"s", "alacritty", "-t", "scratchpad", 
+                                                        // "-o", "window.position.x=400",
+                                                        // "-o", "window.position.y=160",
+                                                        "-o", "window.dimensions.columns=120",
+                                                        "-o", "window.dimensions.lines=30",
+                                                        NULL}; 
+
+static const char *scratchpadcmd_fontsize_16[] = {"s", "alacritty", "-t", "scratchpad", 
+                                                        // "-o", "window.position.x=400",
+                                                        // "-o", "window.position.y=160",
+                                                        "-o", "font.size=16",
+                                                        "-o", "window.dimensions.columns=120",
+                                                        "-o", "window.dimensions.lines=30",
+                                                        NULL}; 
+
+static Key keys[] = {
+	/* modifier                     key             function        argument */
+	{ MODKEY,                       XK_d,           spawn,          {.v = dmenucmd } }, // spawn dmenu
+	{ MODKEY,                       XK_Return,      spawn,          {.v = termcmd } }, // spawn terminal emulator
+	{ MODKEY,                       XK_a,           spawn,          {.v = termcmd_fontsize_16 } }, // spawn terminal emulator
+	{ MODKEY,                       XK_backslash,   togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY|ShiftMask,             XK_backslash,   togglescratch,  {.v = scratchpadcmd_fontsize_16 } },
+	{ MODKEY,                       XK_b,           togglebar,      {0} }, //toggle bar
+	{ MODKEY,                       XK_j,           focusstack,     {.i = +1 } }, // focus next client
+	{ MODKEY,                       XK_k,           focusstack,     {.i = -1 } }, // focus previous client
+	{ MODKEY|ShiftMask,             XK_i,           incnmaster,     {.i = +1 } }, // increase the number of masters
+	{ MODKEY|ShiftMask,             XK_d,           incnmaster,     {.i = -1 } }, // decrease the number of masters
+	{ MODKEY,                       XK_h,           setmfact,       {.f = -0.05} }, // increase m factor
+	{ MODKEY,                       XK_l,           setmfact,       {.f = +0.05} }, // decrease m factor
+	{ MODKEY|Mod1Mask,              XK_h,           incrgaps,       {.i = +1 } },
+	{ MODKEY|Mod1Mask,              XK_l,           incrgaps,       {.i = -1 } },
+	{ MODKEY|Mod1Mask|ShiftMask,    XK_h,           incrogaps,      {.i = +1 } },
+	{ MODKEY|Mod1Mask|ShiftMask,    XK_l,           incrogaps,      {.i = -1 } },
+	{ MODKEY|Mod1Mask|ControlMask,  XK_h,           incrigaps,      {.i = +1 } },
+	{ MODKEY|Mod1Mask|ControlMask,  XK_l,           incrigaps,      {.i = -1 } },
+	{ MODKEY|Mod1Mask,              XK_0,           togglegaps,     {0} },
+	{ MODKEY|Mod1Mask|ShiftMask,    XK_0,           defaultgaps,    {0} },
+	{ MODKEY,                       XK_y,           incrihgaps,     {.i = +1 } },
+	{ MODKEY,                       XK_o,           incrihgaps,     {.i = -1 } },
+	{ MODKEY|ControlMask,           XK_y,           incrivgaps,     {.i = +1 } },
+	{ MODKEY|ControlMask,           XK_o,           incrivgaps,     {.i = -1 } },
+	{ MODKEY|Mod1Mask,              XK_y,           incrohgaps,     {.i = +1 } },
+	{ MODKEY|Mod1Mask,              XK_o,           incrohgaps,     {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_y,           incrovgaps,     {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_o,           incrovgaps,     {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_Return,      zoom,           {0} }, // switch current/next client
+	{ MODKEY,                       XK_Tab,         view,           {0} }, // switch current/next tag
+	{ MODKEY|ShiftMask,             XK_c,           killclient,     {0} }, // kill client
+	{ MODKEY,                       XK_t,           setlayout,      {.v = &layouts[0]} }, // change to tile layout
+	{ MODKEY,                       XK_f,           setlayout,      {.v = &layouts[1]} }, // change to floating layout
+	{ MODKEY,                       XK_m,           setlayout,      {.v = &layouts[2]} }, // change to m layout
+	{ MODKEY,                       XK_space,       setlayout,      {0} },
+	{ MODKEY|ShiftMask,             XK_space,       togglefloating, {0} },
+	{ MODKEY,                       XK_0,           view,           {.ui = ~0 } }, // view all the tags
+	{ MODKEY|ShiftMask,             XK_0,           tag,            {.ui = ~0 } }, // attach client to all the tags
+	{ MODKEY,                       XK_comma,       focusmon,       {.i = -1 } }, // focus next monitor
+	{ MODKEY,                       XK_period,      focusmon,       {.i = +1 } }, // focus previous monitor
+	{ MODKEY|ShiftMask,             XK_comma,       tagmon,         {.i = -1 } }, // move client to next monitor
+	{ MODKEY|ShiftMask,             XK_period,      tagmon,         {.i = +1 } }, // move client to previous monitor
+	TAGKEYS(                        XK_1,                      0) // tag specific key
+	TAGKEYS(                        XK_2,                      1)
+	TAGKEYS(                        XK_3,                      2)
+	TAGKEYS(                        XK_4,                      3)
+	TAGKEYS(                        XK_5,                      4)
+	TAGKEYS(                        XK_6,                      5)
+	TAGKEYS(                        XK_7,                      6)
+	TAGKEYS(                        XK_8,                      7)
+	TAGKEYS(                        XK_9,                      8)
+	{ MODKEY|ShiftMask,             XK_q,           quit,           {0} }, // quit dwm
+};
+
+/* button definitions */
+/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
+static Button buttons[] = {
+	/* click                event mask      button          function        argument */
+	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
+	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
+	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
+	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
+	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
+	{ ClkTagBar,            0,              Button1,        view,           {0} },
+	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
+	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
+	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+};
+
