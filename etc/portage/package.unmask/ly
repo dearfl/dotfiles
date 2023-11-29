@@ -1,3 +1,3 @@
 # required by x11-misc/ly (argument)
-# /etc/portage/package.mask/gentoo-zh:
-x11-misc/ly::gentoo-zh
+# /etc/portage/package.mask/dearfl:
+x11-misc/ly::dearfl
