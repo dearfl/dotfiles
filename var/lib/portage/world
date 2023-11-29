@@ -41,10 +41,12 @@ app-text/tree
 app-text/wgetpaste
 dev-cpp/gtest
 dev-libs/wayland
+dev-libs/yajl
 dev-lua/luacheck
 dev-python/ConfigArgParse
 dev-python/autopep8
 dev-python/black
+dev-python/clang-python
 dev-python/coverage
 dev-python/flake8
 dev-python/mypy
@@ -77,7 +79,6 @@ dev-vcs/git-extras
 dev-vcs/git-filter-repo
 dev-vcs/git-sizer
 dev-vcs/lazygit
-games-emulation/yuzu
 games-roguelike/dwarf-fortress
 games-roguelike/nethack
 games-util/dwarf-therapist
@@ -135,7 +136,7 @@ sci-libs/openblas
 sci-visualization/gnuplot
 sys-apps/bat
 sys-apps/cpuid
-sys-apps/exa
+sys-apps/eza
 sys-apps/fd
 sys-apps/fwupd
 sys-apps/hdparm
