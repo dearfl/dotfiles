@@ -43,13 +43,16 @@ app-shells/fzf
 app-shells/fzf-fish
 app-shells/zoxide
 app-text/mupdf
+app-text/pandoc
 app-text/texlive
 app-text/tree
 app-text/wgetpaste
 dev-cpp/gtest
 dev-debug/gdb
+dev-debug/lldb
 dev-debug/strace
 dev-debug/valgrind
+dev-lang/zig
 dev-libs/wayland
 dev-libs/yajl
 dev-lua/luacheck
@@ -93,6 +96,7 @@ dev-vcs/lazygit
 games-roguelike/dwarf-fortress
 games-roguelike/nethack
 games-util/dwarf-therapist
+gui-apps/wofi
 gui-apps/yambar
 gui-wm/hyprland
 media-fonts/fira-code
@@ -141,6 +145,7 @@ net-misc/httpie
 net-misc/networkmanager
 net-misc/proxychains
 net-misc/you-get
+net-misc/yt-dlp
 net-p2p/transmission
 net-proxy/shadowsocks-rust
 net-proxy/tsocks
