@@ -1,7 +1,7 @@
-[source.crates-io]
-registry = "https://github.com/rust-lang/crates.io-index"
-replace-with = "tuna"
-
+# [source.crates-io]
+# registry = "https://github.com/rust-lang/crates.io-index"
+# replace-with = "tuna"
+#
 # 中国科学技术大学
 # [source.ustc]
 # registry = "git://mirrors.ustc.edu.cn/crates.io-index"
@@ -11,8 +11,8 @@ replace-with = "tuna"
 # registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
 
 # 清华大学
-[source.tuna]
-registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+# [source.tuna]
+# registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
 
 [net]
 git-fetch-with-cli = true
