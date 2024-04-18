@@ -1,2 +1,2 @@
 # required by x11-misc/ly (argument)
-=x11-misc/ly-0.6.0 ~amd64
+>=x11-misc/ly-0.6.0 ~amd64

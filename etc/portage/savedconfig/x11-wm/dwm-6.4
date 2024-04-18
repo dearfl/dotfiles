@@ -75,6 +75,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *termcmd_fontsize_16[]  = { "alacritty", "-o", "font.size=16", NULL };
+static const char *lockcmd[]  = { "i3lock", "-B", "5", NULL };
 
 /*First arg only serves to match against key in rules*/
 static const char *scratchpadcmd[] = {"s", "alacritty", "-t", "scratchpad",
@@ -96,8 +97,9 @@ static const char *scratchpadcmd_fontsize_16[] = {"s", "alacritty", "-t", "scrat
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,						XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,						XK_a,	   spawn,          {.v = termcmd_fontsize_16 } },
+	{ MODKEY,						            XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,						            XK_a,	     spawn,          {.v = termcmd_fontsize_16 } },
+	{ MODKEY,                       XK_q,      spawn,          {.v = lockcmd } },
 	{ MODKEY,                       XK_backslash,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY|ShiftMask,             XK_backslash,  togglescratch,  {.v = scratchpadcmd_fontsize_16 } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -137,6 +139,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -146,7 +149,6 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 /* button definitions */

@@ -1,6 +1,6 @@
 # required by media-sound/termusic-0.6.10::gentoo-zh[cover]
 # required by termusic (argument)
-=media-gfx/ueberzug-18.1.9 ~amd64
+>=media-gfx/ueberzug-18.1.9 ~amd64
 # required by @selected
 # required by @world (argument)
-=media-sound/termusic-0.7.7 ~amd64
+>=media-sound/termusic-0.7.7 ~amd64

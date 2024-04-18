@@ -1,0 +1,3 @@
+# required by tokei (argument)
+# /etc/portage/package.mask/guru:
+dev-util/tokei

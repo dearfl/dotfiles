@@ -1,2 +1,2 @@
 # required by zoxide (argument)
-=app-shells/zoxide-0.8.3-r1 ~amd64
+>=app-shells/zoxide-0.8.3-r1 ~amd64

@@ -1,0 +1,2 @@
+# required by dwl (argument)
+>=gui-wm/dwl-0.5 ~amd64

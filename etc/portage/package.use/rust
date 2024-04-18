@@ -1,0 +1,9 @@
+virtual/rust rustfmt
+dev-lang/rust clippy rustfmt rust-analyzer rust-src
+# required by virtual/rust-1.71.1-r1::gentoo
+# required by gnome-base/librsvg-2.57.0::gentoo
+# required by media-video/ffmpeg-6.0.1-r1::gentoo[svg]
+# required by media-libs/opencv-4.8.0-r2::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+dev-lang/rust-bin rustfmt clippy rust-analyzer

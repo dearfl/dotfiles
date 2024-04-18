@@ -1,15 +1,39 @@
 # required by dev-python/pdm-2.5.1::guru[-test]
 # required by dev-python/pdm (argument)
-=dev-python/unearth-0.9.0 ~amd64
+>=dev-python/unearth-0.9.0 ~amd64
 # required by dev-python/pdm (argument)
-=dev-python/pdm-2.7.1 ~amd64
+>=dev-python/pdm-2.7.1 ~amd64
 # required by dev-python/pdm-2.5.1::guru[-test]
 # required by dev-python/pdm (argument)
-=dev-python/findpython-0.2.4 ~amd64
+>=dev-python/findpython-0.2.4 ~amd64
 # required by dev-python/pdm-2.5.1::guru[-test]
 # required by dev-python/pdm (argument)
-=dev-python/shellingham-1.5.1 ~amd64
+>=dev-python/shellingham-1.5.1 ~amd64
 # required by dev-python/pdm-2.7.1::guru
 # required by @selected
 # required by @world (argument)
-=dev-python/pdm-backend-2.1.2 ~amd64
+>=dev-python/pdm-backend-2.1.2 ~amd64
+# required by dev-python/pdm-2.12.2::gentoo[-test]
+# required by @selected
+# required by @world (argument)
+>=dev-python/dep-logic-0.0.4 ~amd64
+# required by dev-python/pdm-2.12.2::gentoo[-test]
+# required by @selected
+# required by @world (argument)
+>=dev-python/truststore-0.8.0 ~amd64
+
+# required by dev-python/pdm-2.13.3::gentoo[-test]
+# required by @selected
+# required by @world (argument)
+>=dev-python/hishel-0.0.25 ~amd64
+# required by dev-python/pdm-2.13.3::gentoo[-test]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pbs-installer-2024.4.1 ~amd64
+
+# required by dev-python/pdm-backend-2.2.0::gentoo[-test]
+# required by dev-python/dep-logic-0.2.0::gentoo
+# required by dev-python/pdm-2.14.0::gentoo[-test]
+# required by @selected
+# required by @world (argument)
+>=dev-python/pyproject-metadata-0.8.0_rc1 ~amd64

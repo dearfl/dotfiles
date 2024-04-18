@@ -1,0 +1,4 @@
+# required by net-im/wemeet-3.19.0.401::gentoo-zh
+# required by @selected
+# required by @world (argument)
+dev-qt/qtwayland compositor

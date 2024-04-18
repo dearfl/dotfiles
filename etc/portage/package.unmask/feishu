@@ -1,0 +1,3 @@
+# required by bytedance-feishu (argument)
+# /etc/portage/package.mask/gentoo-zh:
+>=app-office/bytedance-feishu-6.9.20

@@ -1,0 +1,6 @@
+# required by dev-lang/zig-0.11.0-r1::gentoo
+# required by zig (argument)
+sys-devel/llvm zstd
+# required by dev-lang/zig-0.11.0-r1::gentoo
+# required by zig (argument)
+sys-devel/lld zstd

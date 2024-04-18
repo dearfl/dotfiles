@@ -1,0 +1,4 @@
+# required by i3lock-fancy-rapid (argument)
+>=x11-misc/i3lock-fancy-rapid-0.0.0_pre20210421 ~amd64
+# required by i3lock-color (argument)
+>=x11-misc/i3lock-color-2.13.5 ~amd64

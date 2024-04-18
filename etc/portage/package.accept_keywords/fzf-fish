@@ -1,2 +1,2 @@
 # required by fzf-fish (argument)
-=app-shells/fzf-fish-9.0 ~amd64
+>=app-shells/fzf-fish-9.0 ~amd64

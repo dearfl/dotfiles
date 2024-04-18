@@ -1,4 +1,4 @@
 # required by dwarf-fortress (argument)
-=games-roguelike/dwarf-fortress-0.47.05-r1 ~amd64
+>=games-roguelike/dwarf-fortress-0.47.05-r1 ~amd64
 # required by dwarf-therapist (argument)
-=games-util/dwarf-therapist-41.2.2 ~amd64
+>=games-util/dwarf-therapist-41.2.2 ~amd64

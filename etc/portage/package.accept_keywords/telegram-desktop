@@ -1,0 +1,16 @@
+# required by net-im/telegram-desktop-4.14.6::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=dev-cpp/cppgir-0_p20240110 ~amd64
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=net-im/telegram-desktop-4.14.6 ~amd64
+# required by dev-cpp/cppgir-0_p20240110::gentoo
+# required by net-im/telegram-desktop-4.14.6::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=dev-cpp/expected-lite-0.6.3 ~amd64
+# required by net-im/telegram-desktop-4.14.6::gentoo
+# required by @__auto_slot_operator_replace_installed__ (argument)
+>=media-libs/tg_owt-0_pre20230921 ~amd64
+# required by net-im/telegram-desktop-4.14.6::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libtgvoip-2.4.4_p20221208-r1 ~amd64

@@ -1,0 +1,2 @@
+# required by netdata (argument)
+>=net-analyzer/netdata-1.44.0 ~amd64
