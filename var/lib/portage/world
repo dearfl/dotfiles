@@ -98,6 +98,7 @@ games-roguelike/nethack
 games-util/dwarf-therapist
 gui-apps/wofi
 gui-apps/yambar
+gui-wm/dwl
 gui-wm/hyprland
 media-fonts/fira-code
 media-fonts/fira-mono
