@@ -1,3 +1,0 @@
-# required by dev-util/rust-analyzer-20220613::guru
-# required by rust-analyzer::guru (argument)
->=dev-lang/rust-1.62.1 rust-src
