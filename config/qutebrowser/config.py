@@ -50,11 +50,11 @@ c.content.webrtc_ip_handling_policy = "default-public-interface-only"
 # QtWebEngine, writing the clipboard as response to a user interaction
 # is always allowed.
 # Type: Bool
-c.content.javascript.can_access_clipboard = False
+# c.content.javascript.can_access_clipboard = False
 
 # Allow JavaScript to open new tabs without user interaction.
 # Type: Bool
-c.content.javascript.can_open_tabs_automatically = False
+# c.content.javascript.can_open_tabs_automatically = False
 
 # Enable JavaScript.
 # Type: Bool
@@ -235,6 +235,8 @@ c.url.searchengines = {
     'r': 'https://doc.rust-lang.org/stable/std/?search={}',
     'gt': 'https://wiki.gentoo.org/wiki/{}',
     'gh': 'https://github.com/search?q={}',
+    'rc': 'https://crates.io/search?q={}',
+    'rd': 'https://docs.rs/releases/search?query={}',
 }
 
 #c.url.start_pages = ['https://nixos.org/nixos/manual/options.html']
@@ -309,5 +311,5 @@ c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack
 config.bind('<Ctrl-l>', 'config-cycle content.proxy socks5://localhost:1082 none', mode='normal')
 config.bind('zp', 'hint links spawn proxychains -q mpv {hint-url}')
 config.bind('zm', 'hint links spawn mpv {hint-url}')
-config.bind('zd', 'hint links spawn yt-dlp -P ~/res/downloads/videos --proxy socks5://localhost:1080 {hint-url}')
+config.bind('zd', 'hint links spawn yt-dlp -P ~/res/downloads/videos --proxy socks5://localhost:1082 {hint-url}')
 
