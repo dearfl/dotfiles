@@ -1,0 +1,3 @@
+# required by fcitx-meta (argument)
+# /etc/portage/package.mask/gentoo-zh:
+app-i18n/fcitx-meta::gentoo-zh
