@@ -1,0 +1,2 @@
+# required by dua-cli (argument)
+>=sys-fs/dua-cli-2.29.0 ~amd64
