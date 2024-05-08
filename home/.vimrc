@@ -21,21 +21,21 @@ Plug 'itchyny/lightline.vim'
 Plug 'andymass/vim-matchup'
 
 " fuzzy finder
-Plug 'airblade/vim-rooter'
+" Plug 'airblade/vim-rooter'
 " fzf itself is managed by portage
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " language support
 " Plug 'plasticboy/vim-markdown'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'dense-analysis/ale'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" Plug 'dense-analysis/ale'
 
-Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
 
 "Plug 'bfrg/vim-cpp-modern'
 "Plug 'davidhalter/jedi-vim'
@@ -49,7 +49,7 @@ Plug 'SirVer/ultisnips'
 " Plug 'ap/vim-css-color'
 " Plug 'gko/vim-coloresque'
 " Plug 'skammer/vim-css-color'
-Plug 'chrisbra/Colorizer'
+" Plug 'chrisbra/Colorizer'
 
 call plug#end()
 " basic setup
