@@ -1,4 +1,0 @@
-# required by sci-visualization/gnuplot-5.4.6::gentoo
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtgui-5.15.9-r1 ~amd64

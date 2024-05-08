@@ -1,8 +1,0 @@
-app-i18n/fcitx-meta::gentoo-zh
-app-i18n/libime::gentoo-zh
-app-i18n/fcitx-qt::gentoo-zh
-app-i18n/fcitx::gentoo-zh
-app-i18n/fcitx-configtool::gentoo-zh
-app-i18n/fcitx-chinese-addons::gentoo-zh
-app-i18n/fcitx-gtk::gentoo-zh
-x11-libs/xcb-imdkit::gentoo-zh
