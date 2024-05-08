@@ -1,1 +1,1 @@
-../../var/db/repos/dearfl/profiles/no-multilib-desktop-systemd-merged-usr
+../../var/db/repos/dearfl/profiles/no-multilib-desktop-systemd
