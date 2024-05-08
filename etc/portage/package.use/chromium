@@ -1,5 +1,5 @@
 # required by www-client/chromium-103.0.5060.53::gentoo
 # required by chromium (argument)
->=net-libs/nodejs-18.3.0 inspector
+net-libs/nodejs inspector
 # custom
 www-client/chromium -js-type-check -suid

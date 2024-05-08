@@ -5,12 +5,11 @@
 # required by app-i18n/fcitx-meta-5.0.12-r1::gentoo-zh[configtool]
 # required by @selected
 # required by @world (argument)
->=app-text/xmlto-0.0.28-r8 text
+app-text/xmlto text
 # move app-i18n/fcitx5-configtool app-i18n/fcitx-configtool
 app-i18n/fcitx-configtool -kcm
 # required by app-i18n/fcitx5-configtool-5.0.10::gentoo-zh
 # required by app-i18n/fcitx5-meta-5.0.12::gentoo-zh[configtool]
 # required by fcitx5-meta (argument)
 # move app-i18n/fcitx5-qt app-i18n/fcitx-qt
->=app-i18n/fcitx-qt-5.0.9 qt5
-app-i18n/fcitx-gtk -wayland
+app-i18n/fcitx-qt qt5

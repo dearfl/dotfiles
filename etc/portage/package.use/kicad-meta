@@ -5,10 +5,10 @@ app-doc/kicad-doc L10N: en
 # required by sci-electronics/kicad-symbols-6.0.6::gentoo
 # required by sci-electronics/kicad-meta-6.0.6::gentoo
 # required by kicad-meta (argument)
->=dev-libs/boost-1.79.0 context python
+dev-libs/boost context python
 # required by dev-python/wxpython-4.0.7-r2::gentoo
 # required by sci-electronics/kicad-6.0.6::gentoo[python_single_target_python3_10]
 # required by sci-electronics/kicad-symbols-6.0.6::gentoo
 # required by sci-electronics/kicad-meta-6.0.6::gentoo
 # required by kicad-meta (argument)
->=x11-libs/wxGTK-3.0.5.1 tiff libnotify sdl gstreamer
+x11-libs/wxGTK tiff libnotify sdl gstreamer

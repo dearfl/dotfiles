@@ -7,4 +7,4 @@ app-text/texlive-core xetex cjk
 # required by app-text/texlive-2021::gentoo[extra]
 # required by @selected
 # required by @world (argument)
->=media-libs/harfbuzz-5.1.0 icu
+media-libs/harfbuzz icu

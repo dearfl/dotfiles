@@ -1,40 +1,40 @@
 # required by media-gfx/freecad-0.20-r1::gentoo
 # required by @selected
 # required by @world (argument)
->=sci-libs/opencascade-7.6.2-r1 json vtk
+sci-libs/opencascade json vtk
 # required by media-gfx/freecad-0.20-r1::gentoo[python_single_target_python3_10]
 # required by @selected
 # required by @world (argument)
->=dev-python/pyside2-5.15.2-r2 svg webengine webchannel quick location positioning qml printsupport
+dev-python/pyside2 svg webengine webchannel quick location positioning qml printsupport
 # required by dev-python/pyside2-5.15.5::gentoo[quick]
 # required by media-gfx/freecad-0.20-r1::gentoo[python_single_target_python3_10]
 # required by @selected
 # required by @world (argument)
->=dev-qt/qtquickcontrols2-5.15.5-r1 widgets
+dev-qt/qtquickcontrols2 widgets
 # required by media-gfx/freecad-0.20-r1::gentoo
 # required by @selected
 # required by @world (argument)
->=sci-libs/med-4.1.1 python
+sci-libs/med python
 
->=sci-libs/vtk-9.0.3 qt5 python
+sci-libs/vtk qt5 python
 
 # required by sci-libs/vtk-9.1.0-r4::gentoo
 # required by media-gfx/freecad-0.20.1::gentoo[fem]
 # required by @__auto_slot_operator_replace_installed__ (argument)
->=sci-libs/cgnslib-4.3.0 hdf5
+sci-libs/cgnslib hdf5
 # required by sci-libs/vtk-9.1.0-r4::gentoo[gdal,python]
 # required by media-gfx/freecad-0.20.1::gentoo[fem]
 # required by @__auto_slot_operator_replace_installed__ (argument)
->=sci-libs/gdal-3.5.3 python
+sci-libs/gdal python
 # required by dev-python/matplotlib-3.6.2::gentoo[-test]
 # required by media-gfx/freecad-0.20.1::gentoo[python_single_target_python3_10]
 # required by @selected
 # required by @world (argument)
->=dev-python/pillow-9.3.0 webp
+dev-python/pillow webp
 # required by media-gfx/freecad-0.20.1::gentoo
 # required by @selected
 # required by @world (argument)
->=dev-libs/xerces-c-3.2.3 icu
+dev-libs/xerces-c icu
 
 # required by media-libs/simage-1.8.1-r3::gentoo[tiff]
 # required by media-libs/coin-4.0.0::gentoo
@@ -43,4 +43,4 @@
 # required by media-gfx/freecad-0.20.2::gentoo[python_single_target_python3_10]
 # required by @selected
 # required by @world (argument)
->=media-libs/tiff-4.5.0 zstd lzma
+media-libs/tiff zstd lzma
