@@ -1,3 +1,3 @@
 # required by dwarf-therapist (argument)
 # /etc/portage/package.mask/guru:
-games-util/dwarf-therapist
+games-util/dwarf-therapist::guru

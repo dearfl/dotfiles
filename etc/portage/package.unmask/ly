@@ -1,3 +1,0 @@
-# required by x11-misc/ly (argument)
-# /etc/portage/package.mask/dearfl:
-x11-misc/ly::dearfl

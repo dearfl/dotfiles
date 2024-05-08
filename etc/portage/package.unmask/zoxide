@@ -1,3 +1,0 @@
-# required by zoxide (argument)
-# /etc/portage/package.mask/guru:
-app-shells/zoxide

@@ -1,5 +1,5 @@
 # required by i3lock-fancy-rapid (argument)
 # /etc/portage/package.mask/guru:
-x11-misc/i3lock-fancy-rapid
+x11-misc/i3lock-fancy-rapid::guru
 # required by i3lock-color (argument)
-x11-misc/i3lock-color
+x11-misc/i3lock-color::guru

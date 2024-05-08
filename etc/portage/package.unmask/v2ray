@@ -1,7 +1,7 @@
 # required by v2ray (argument)
 # /etc/portage/package.mask/gentoo-zh:
-dev-libs/v2ray-geoip-bin
-dev-libs/v2ray-domain-list-community-bin
-net-proxy/v2ray
-app-alternatives/v2ray-geoip
-app-alternatives/v2ray-geosite
+dev-libs/v2ray-geoip-bin::gentoo-zh
+dev-libs/v2ray-domain-list-community-bin::gentoo-zh
+net-proxy/v2ray::gentoo-zh
+app-alternatives/v2ray-geoip::gentoo-zh
+app-alternatives/v2ray-geosite::gentoo-zh
