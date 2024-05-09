@@ -1,3 +1,5 @@
 # required by net-im/telegram-desktop-4.14.6::gentoo
 # required by @__auto_slot_operator_replace_installed__ (argument)
 >=dev-cpp/cppgir-0_p20240110 ~amd64
+# required by =telegram-desktop-5.0.0 (argument)
+>=net-im/telegram-desktop-5.0.0 ~amd64
