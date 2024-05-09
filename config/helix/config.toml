@@ -1,0 +1,7 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+
+[editor.lsp]
+display-inlay-hints = true
